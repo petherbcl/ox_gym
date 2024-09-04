@@ -1,0 +1,14 @@
+{
+    "pushups" : "Flexões",
+    "situps" : "Abdominais",
+    "chinups" : "Chinups",
+    "bicep" : "Biceps",
+
+    "toFinish" : "[%s] - Para terminar",
+
+    "notificaton" : {
+        "startExercise" : "Iniciou exercício - %s",
+        "finishExercise" : "Finalisou exercício - %s",
+        "spotOcupied" : "Ponto ocupado"
+    }
+}

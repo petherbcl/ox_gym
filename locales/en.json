@@ -1,0 +1,14 @@
+{
+    "pushups" : "Pushups",
+    "situps" : "Situps",
+    "chinups" : "Chinups",
+    "bicep" : "Biceps",
+
+    "toFinish" : "[%s] - To Finish",
+
+    "notificaton" : {
+        "startExercise" : "You start %s",
+        "finishExercise" : "%s finished",
+        "spotOcupied" : "This spot is occupied"
+    }
+}
