@@ -70,7 +70,10 @@ local function startExercise(exercise, coord)
         
         CreateThread(function ()
             while isExercising do
-                TaskPlayAnim(cache.ped, Config.Exercises[exercise].actionDict, Config.Exercises[exercise].actionClip, 3.0, 1.0, Config.Exercises[exercise].actionTime, 0, 0)
+            
+                if not IsEntityPlayingAnim(cache.ped, Config.Exercises[exercise].actionDict, Config.Exercises[exercise].actionClip,3) then
+                    TaskPlayAnim(cache.ped, Config.Exercises[exercise].actionDict, Config.Exercises[exercise].actionClip, 3.0, 1.0, -1, 1, 0)
+                end    
                 DisableControlAction(0, 21, true)
                 DisableControlAction(0, 30, true)
                 DisableControlAction(0, 31, true)
@@ -82,6 +85,7 @@ local function startExercise(exercise, coord)
                 StartAnim(Config.Exercises[exercise].exitDict, Config.Exercises[exercise].exitClip, Config.Exercises[exercise].exitTime)
             end
             lib.callback.await(GetCurrentResourceName()..':server:deleteProp', false)
+            ClearPedTasks(cache.ped)
             notify(locale("notificaton.finishExercise", locale(exercise)))
             finishExerciseSuccess(exercise, coord)
         end)

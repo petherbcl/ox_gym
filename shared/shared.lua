@@ -15,7 +15,7 @@ Config.Exercises = {
         starttime = 3050,
         actionDict = 'amb@world_human_push_ups@male@base',
         actionClip = 'base',
-        actionTime = 1100,
+        actionTime = 2000,
         exitDict = 'amb@world_human_push_ups@male@exit',
         exitClip = 'exit',
         exitTime = 3400,
@@ -26,7 +26,7 @@ Config.Exercises = {
         starttime = 4200,
         actionDict = 'amb@world_human_sit_ups@male@base',
         actionClip = 'base',
-        actionTime = 3400,
+        actionTime = 2000,
         exitDict = 'amb@world_human_sit_ups@male@exit',
         exitClip = 'exit',
         exitTime = 3700,
@@ -37,7 +37,7 @@ Config.Exercises = {
         starttime = 1600,
         actionDict = 'amb@prop_human_muscle_chin_ups@male@base',
         actionClip = 'base',
-        actionTime = 3000,
+        actionTime = 2000,
         exitDict = 'amb@prop_human_muscle_chin_ups@male@exit',
         exitClip = 'exit',
         exitTime = 1200,
@@ -45,9 +45,14 @@ Config.Exercises = {
     ['bicep'] = {
         actionDict = 'amb@world_human_muscle_free_weights@male@barbell@base',
         actionClip = 'base',
-        actionTime = 3000,
+        actionTime = 2000,
 
         prop = { model = `prop_curl_bar_01`, bone = 28422, pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 0.0) },
+    },
+    ['treadmill'] = {
+        actionDict = 'move_characters@franklin@fire',
+        actionClip = 'run',
+        actionTime = 2000,
     }
 }
 
@@ -58,8 +63,8 @@ Config.locations = {
 }
 
 Config.entities = {
-    --{entity = `prop_weight_squat`, exercise = ''}
     { entity = `prop_muscle_bench_05`, distance = 2, exercise = 'chinups', offset = vector4(0.0, 0.8, -0.7, 180.0) },
     { entity = `prop_muscle_bench_01`, distance = 2, exercise = 'situps',  offset = vector4(0.0, -0.3, 0.5, 0.0) },
     { entity = `prop_weight_squat`, distance = 2, exercise = 'bicep',  offset = vector4(0.0, -0.5, -0.7, 0.0) },
+    { entity = `apa_p_apdlc_treadmill_s`, distance = 2, exercise = 'treadmill',  offset = vector4(0.0, 0.0, 0.0, 180.0) },
 }
