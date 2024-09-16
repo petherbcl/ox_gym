@@ -93,12 +93,6 @@ local function startExercise(exercise, coord)
     end)
 end
 
-
-
-
-
-
-
 --------------------------------------------
 -- FUNCTIONS
 --------------------------------------------
