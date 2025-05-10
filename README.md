@@ -20,12 +20,12 @@ O `ox_gym` é um recurso para o **FiveM** que adiciona funcionalidades relaciona
 
 ## Configuração
 Edite o arquivo de configuração principal para personalizar as academias e funcionalidades.
-- 1. Abra o arquivo de configuração do recurso (ex.: config.lua).
-- 2. Personalize as opções disponíveis, como:
--- Localização das academias no mapa.
--- Tipos de equipamentos disponíveis.
--- Atributos físicos que podem ser melhorados.
-- 3. Salve as alterações e reinicie o servidor.
+1. Abra o arquivo de configuração do recurso (ex.: config.lua).
+2. Personalize as opções disponíveis, como:
+    - Localização das academias no mapa.
+    - Tipos de equipamentos disponíveis.
+    - Atributos físicos que podem ser melhorados.
+3. Salve as alterações e reinicie o servidor.
 
 
 ## Contribuição
