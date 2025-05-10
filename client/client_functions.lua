@@ -12,5 +12,6 @@ function finishExerciseSuccess(exercise, coord)
 end
 
 function notify(text)
-    lib.notify({title = 'Gym',description = text,type = 'inform'})
+    TriggerEvent("pth_notify", 'important', text, 5000)
+    --lib.notify({title = 'Gym',description = text,type = 'inform'})    
 end
